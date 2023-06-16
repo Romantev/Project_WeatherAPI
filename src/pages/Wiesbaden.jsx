@@ -28,7 +28,7 @@ const Wiesbaden = () => {
       .then((data) => {
         setData2(data);
       })
-      .catch((error) => console.log("Fehler: ", error));
+      .catch((error) => console.log("Fehleranzeige: ", error));
   }, []);
 
   return (
