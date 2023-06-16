@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  padding: 0;
+}
+
+main {
+  width: 100vw;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: lighter;
+}
+
+article {
+  width: 60vw;
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  align-items: flex-start;
+}
+
+.forecast-weather {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  cursor: -webkit-grabbing;
+}
+
+.forecast-weather img {
+  width: 10vw;
+  object-fit: contain;
+}
+
+.forecast-weather h2 {
+  font-size: 1.4rem;
+}
+
+.forecast-weather h3 {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.dark {
+  background-color: rgb(35, 35, 35);
+  color: white;
+}
+
+.dark .dark svg,
+.dark div,
+.dark img,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p,
+.dark .links {
+  background-color: rgb(35, 35, 35);
+  color: white;
+  fill: white;
+}
+
+.dark nav {
+  border-bottom: 3px solid white;
+}
+
+.dark div {
+  border-bottom: 1px solid white;
+}
+
+.dark .toggle {
+  border: none;
+}
+
+.dark .forecast-weather {
+  border: none;
+}
+
+.dark .active {
+  box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+}
+
+.loading-animation {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
